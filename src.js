@@ -20,25 +20,29 @@ b) Quando o usuário clicar no botão 'share it':
 // importar o arquivo json - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import/with
 import data from './quotes.json' with{type: 'json'}
 
-console.log(data[4])
 
+console.log(data[4])
 // selecionar frase aleatoriamente com o método Math.floor((Math.random() * <tamanho do array>))
 // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 console.log(data.length)
-
-
-// selecionar nó do html relacionado a mensagem  
-// https://developer.mozilla.org/pt-BR/docs/Web/API/Document/querySelector
 let id = 0
 id = Math.floor(Math.random() * data.length)
 console.log(data[id])
 
-let = document.querySelector('#content')
-content.textContent="balaalalalall"
+let content = document.querySelector('#content')
+console.textContent = "blablabla"
 console.log(content.textContent)
+// selecionar nó do html relacionado a mensagem  
+// https://developer.mozilla.org/pt-BR/docs/Web/API/Document/querySelector
+
+
+
 // selecionar nó do html relacionado ao botão de novas frases
 // https://developer.mozilla.org/pt-BR/docs/Web/API/Document/getElementById
 // selecionar nó do html relacionado ao botão de compartilhar twitter
+let newQuoteButton = document.getElementById("newQuote")
+let xButton = document.getElementById("shareTwitter")
+console.log(newQuoteButton)
 
 
 
@@ -51,6 +55,7 @@ console.log(content.textContent)
    https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event
 */
 
+newQuoteButton.addEventListener("click")
 
 /* adicionar evento de click para quando usuário clicar no botão shareIt
    https://developer.x.com/en/docs/x-for-websites/tweet-button/overview
